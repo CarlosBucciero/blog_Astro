@@ -1,0 +1,23 @@
+---
+import Social from './Social.astro';
+
+const platform = "github";
+const username = "carlosbucciero";
+
+---
+
+<footer>
+  <p>¡Más información sobre mis proyectos en <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+
+  <Social platform="linkedin" username="in/carlosbucciero" />
+  <Social platform="instagram" username="carlosbucciero" />
+  <Social platform="youtube" username="@carlosbucciero" />
+</footer>
+
+<style>
+    footer {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
